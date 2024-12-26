@@ -1,0 +1,126 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 180px; /* Adjusted padding for better responsiveness */
+    line-height: 1.1;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 4rem; /* Responsive font size */
+    font-weight: 700;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img {
+    width: 105px;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 1.2rem; /* Responsive font size */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-latest-btn:hover {
+    background: #ff6161; /* Slightly lighter shade on hover */
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+    box-sizing: border-box;
+}
+
+.hero-right img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Optional for a rounded look */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack sections vertically */
+        height: auto; /* Adjust height dynamically */
+    }
+
+    .hero-left {
+        padding: 20px; /* Reduce padding for smaller screens */
+        text-align: center; /* Center-align text */
+    }
+
+    .hero-left h2 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .hero-left p {
+        font-size: 2.5rem; /* Adjust main text size */
+    }
+
+    .hero-hand-icon img {
+        width: 80px; /* Adjust icon size */
+    }
+
+    .hero-latest-btn {
+        width: 100%; /* Full width button */
+        max-width: 310px; /* Restrict maximum width */
+    }
+
+    .hero-right {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-left p {
+        font-size: 2rem; /* Smaller text for very small screens */
+    }
+
+    .hero-hand-icon img {
+        width: 60px; /* Adjust icon size */
+    }
+
+    .hero-latest-btn {
+        height: 60px; /* Adjust button height */
+    }
+}

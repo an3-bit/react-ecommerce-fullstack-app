@@ -1,0 +1,92 @@
+.offers {
+    width: 100%; /* Use full width for better layout */
+    max-width: 1200px; /* Restrict the maximum width */
+    height: auto; /* Allow height to adjust dynamically */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    margin: 0 auto 150px; /* Center section and add bottom margin */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box;
+    background: linear-gradient(189deg, #fde1ff 0%, #e1ffea22 60%);
+}
+
+.offers-left {
+    flex: 1;
+    min-width: 300px; /* Set minimum width to avoid collapsing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 3rem; /* Responsive font size */
+    font-weight: 600;
+    line-height: 1.2; /* Adjust line spacing */
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 1.2rem; /* Responsive font size */
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 282px;
+    height: 70px;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 1.2rem; /* Responsive font size */
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.offers-left button:hover {
+    background: #ff6161;
+}
+
+.offers-right {
+    flex: 1;
+    min-width: 300px; /* Set minimum width to avoid collapsing */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image horizontally */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.offers-right img {
+    max-width: 100%; /* Ensure the image does not overflow */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Contain the image within the box */
+    border-radius: 10px; /* Optional styling */
+}
+
+@media screen and (max-width: 768px) {
+    .offers {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    .offers-left {
+        align-items: center; /* Center content for smaller screens */
+        text-align: center;
+    }
+
+    .offers-left h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .offers-left button {
+        width: 100%; /* Make the button full-width */
+        max-width: 300px; /* Restrict maximum width */
+    }
+
+    .offers-right {
+        justify-content: center; /* Center the image */
+    }
+}
