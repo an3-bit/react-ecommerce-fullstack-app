@@ -1,113 +1,114 @@
-.popular {  
-    display: flex;  
-    flex-direction: column;  
-    align-items: center;  
-    gap: 20px;  
-    padding: 20px;  
-    box-sizing: border-box;  
-    overflow: hidden;  
-    width: 100%;  
-}  
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+}
 
-.popular h1 {  
-    color: #171717;  
-    font-size: 50px;  
-    font-weight: 600;  
-    text-align: center; /* Center the heading */  
-    margin-bottom: 10px;  
-}  
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center; /* Center the heading */
+    margin-bottom: 10px;
+}
 
-.popular hr {  
-    width: 200px;  
-    height: 6px;  
-    border-radius: 10px;  
-    background: #252525;  
-}  
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
 
-.popular-item {  
-    margin-top: 20px;  
-    display: flex; /* Horizontal alignment */  
-    flex-wrap: wrap; /* Ensure responsiveness */  
-    justify-content: center; /* Center items horizontally */  
-    gap: 30px; /* Spacing between images */  
-    width: 100%;  
-}  
+.popular-item {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    justify-content: space-between; /* Space items evenly */
+    gap: 15px; /* Spacing between images */
+    width: 100%;
+}
 
-.item-container {  
-    display: flex;  
-    flex-direction: column;  
-    align-items: center;  
-    gap: 10px;  
-    position: relative;  
-    max-width: 200px;  
-    flex: 1 1 calc(20% - 30px); /* Responsive layout for 5 items per row */  
-    box-sizing: border-box;  
-}  
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    width: calc(25% - 15px); /* Ensure 4 items per row */
+    max-width: 25%; /* Prevent items from growing too large */
+    box-sizing: border-box;
+}
 
-.image-container {  
-    position: relative;  
-    width: 100%;  
-    overflow: hidden;  
-    border-radius: 10px;  
-}  
+.image-container {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    overflow: hidden;
+    border-radius: 10px;
+}
 
-.image-container img {  
-    width: 100%;  
-    height: auto;  
-    object-fit: cover;  
-    display: block;  
-    transition: transform 0.3s ease;  
-}  
+.image-container img {
+    width: 100%; /* Ensure images fill the container width */
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
 
-.image-container:hover img {  
-    transform: scale(1.1); /* Hover effect to enlarge image */  
-}  
+.image-container:hover img {
+    transform: scale(1.1); /* Hover effect to enlarge image */
+}
 
-.item-name {  
-    color: #171717;  
-    font-size: 18px;  
-    font-weight: bold;  
-    text-align: center;  
-    margin-top: 10px;  
-}  
+.item-name {
+    color: #171717;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
 
-.price {  
-    display: flex;  
-    flex-direction: column;  
-    align-items: center;  
-    font-size: 20px;  
-    font-weight: 600;  
-    color: #171717;  
-    text-align: center;  
-}  
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #171717;
+    text-align: center;
+}
 
-.new-price {  
-    color: #ff4141;  
-    font-weight: bold;  
-    font-size: 22px;  
-}  
+.new-price {
+    color: #ff4141;
+    font-weight: bold;
+    font-size: 22px;
+}
 
-.old-price {  
-    color: #a1a1a1;  
-    font-size: 18px;  
-    text-decoration: line-through;  
-    margin-top: 5px;  
-}  
+.old-price {
+    color: #a1a1a1;
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-top: 5px;
+}
 
-@media screen and (max-width: 1024px) {  
-    .item-container {  
-        flex: 1 1 calc(33.33% - 30px); /* Adjust to 3 items per row */  
-    }  
-}  
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .item-container {
+        width: calc(33.33% - 15px); /* Adjust to 3 items per row */
+    }
+}
 
-@media screen and (max-width: 768px) {  
-    .item-container {  
-        flex: 1 1 calc(50% - 30px); /* Adjust to 2 items per row */  
-    }  
-}  
+@media screen and (max-width: 768px) {
+    .item-container {
+        width: calc(50% - 15px); /* Adjust to 2 items per row */
+    }
+}
 
-@media screen and (max-width: 480px) {  
-    .item-container {  
-        flex: 1 1 100%; /* Adjust to 1 item per row */  
-    }  
-}  
+@media screen and (max-width: 480px) {
+    .item-container {
+        width: 100%; /* Adjust to 1 item per row */
+    }
+}

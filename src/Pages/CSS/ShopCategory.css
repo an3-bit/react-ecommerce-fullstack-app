@@ -1,0 +1,63 @@
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 100%; /* Ensure the banner spans the full width of its container */
+    max-width: 100%; /* Prevent the image from exceeding its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.shopcategory-indexSort {
+    display: flex;
+    margin: 0 auto; /* Center align the content horizontally */
+    padding: 0 20px; /* Add some padding instead of a fixed margin */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure it adjusts based on container width */
+    box-sizing: border-box; /* Include padding and borders in width calculations */
+}
+
+.shopcartegory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+
+.shopcategory-indexSort p span {
+    font-weight: 600;
+}
+
+.shopcategory-products {
+    margin: 20px auto; /* Center align grid content */
+    padding: 0 10px; /* Add slight padding to prevent overflow */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Exactly 4 columns */
+    gap: 15px; /* Adjusted gap to create consistent spacing between items */
+    width: calc(100% - 20px); /* Subtract padding from the width */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.shopcategory-products img {
+    width: 100%; /* Make images responsive within grid items */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add slight rounding to images */
+}
+
+.shopcategory-products .product {
+    text-align: center; /* Center product text */
+    word-wrap: break-word; /* Ensure long words break onto a new line */
+    font-size: 16px; /* Adjust font size to prevent overlap */
+    margin-top: 10px; /* Add space between image and text */
+}
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+}
